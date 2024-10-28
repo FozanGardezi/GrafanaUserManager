@@ -1,9 +1,5 @@
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 from django.db import models
-from django.dispatch import receiver
-from django.db.models.signals import post_save
-from django.conf import settings
-import requests
 
 class GrafanaOrganization(models.Model):
     name = models.CharField(max_length=255)
